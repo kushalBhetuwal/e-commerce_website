@@ -8,12 +8,15 @@ const Navigation = ()=>{
    <div className="navigation">
        <div>
        <Link  className="logo-container" to ='/'>
-       <i class="fa-brands fa-cc-apple-pay" style={{color: "#333333", fontSize:'80px'}}></i>
+       <i className="fa-brands fa-cc-apple-pay" style={{color: "#333333", fontSize:'80px'}}></i>
        </Link>
        </div>
          <div className='nav-links-container'>
             <Link className="nav-link" to='/shop'>
               Shop
+            </Link>
+            <Link className="nav-link" to='/signin'>
+              Signin
             </Link>
          </div>
       </div>
