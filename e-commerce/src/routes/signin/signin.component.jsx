@@ -1,4 +1,4 @@
-import { signinwithgooglepopup } from "../../utlils/firebase/firebase";
+import { signinwithgooglepopup } from "../../utlils/firebase/firebase.js";
 
 const Signin =()=>{
     const loggoogleuser =async()=>{

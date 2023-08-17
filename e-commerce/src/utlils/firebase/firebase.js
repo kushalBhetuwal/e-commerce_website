@@ -2,6 +2,7 @@ import { initializeApp } from "firebase/app";
 import { GoogleAuthProvider, getAuth, signInWithPopup, signInWithRedirect } from "firebase/auth";
 
 
+
 const firebaseConfig = {
   apiKey: "AIzaSyCekrAhKoaV9qw00Uy66iYhktjsJbtreLY",
   authDomain: "e-commerce-541a7.firebaseapp.com",
