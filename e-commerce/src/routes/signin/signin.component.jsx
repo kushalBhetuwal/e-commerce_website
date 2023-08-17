@@ -3,8 +3,8 @@ import { signinwithgooglepopup,createuserdocumentfromauth } from "../../utlils/f
 const Signin =()=>{
     const loggoogleuser =async()=>{
         const {user} =await signinwithgooglepopup();
-        console.log(user);
-        createuserdocumentfromauth(user)
+        const docref = await createuserdocumentfromauth(user)
+        console.log(docref);
     }
     return(
         <div>
