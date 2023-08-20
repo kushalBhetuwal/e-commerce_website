@@ -1,4 +1,4 @@
-import { signinwithgooglepopup,createuserdocumentfromauth, signinwithredirect, auth } from "../../utlils/firebase/firebase.js";
+import { createuserdocumentfromauth, auth } from "../../utlils/firebase/firebase.js";
 import { useEffect } from "react";
 import { getRedirectResult } from "firebase/auth";
 import SignupForm from "../../components/signupform/signupform.component.jsx";

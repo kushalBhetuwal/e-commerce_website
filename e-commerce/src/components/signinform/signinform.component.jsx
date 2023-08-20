@@ -24,12 +24,21 @@ const SigninForm = ()=>{
         event.preventDefault()
         
       try{
-     await signInAuthUserWithEmailAndPassword(email, password);
+     const response= await signInAuthUserWithEmailAndPassword(email, password);
+     console.log(response);
        resetfields();
       }
       catch(error){
-        alert("Cannot signin, Please check the email and password")
-        console.log("Cannot Signin", error)
+        switch(error.code){
+            case 'auth/wrong-password':
+                alert("incorrect password")
+                break;
+            case 'auth/user-not-found':
+                alert("no user associated with this email")
+                break;
+            default:
+                break;
+        }
      
     }
 
@@ -48,7 +57,7 @@ const SigninWithGoogle =async()=>{
                 <FormInput label="Password" type = "password"  name ='password' onChange={handleclick} value ={password} required/>
                 <div className = "buttons-container">
                 <Button type = "submit">Sign in</Button>
-                <Button buttontype={"google"} onClick={SigninWithGoogle}  type = "submit"> Google SignIn</Button>
+                <Button buttontype={"google"} onClick={SigninWithGoogle}  type = "button"> Google SignIn</Button>
                 </div>
                 
             </form>
