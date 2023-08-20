@@ -54,7 +54,7 @@ const SignupForm = ()=>{
                 <FormInput label="Email" type = "email" name ='email' onChange={handleclick} value ={email} required/>
                 <FormInput label="Password" type = "password"  name ='password' onChange={handleclick} value ={password} required/>
                 <FormInput label="Confirm Password" type = "password"  name ='confirm'  onChange={handleclick} value={confirm} required/>
-                <Button buttontype ="inverted" type = "submit">Submit</Button>
+                <Button type = "submit">Submit</Button>
             </form>
         </div>
        
