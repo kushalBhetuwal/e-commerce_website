@@ -5,7 +5,7 @@ import './signup.component.scss'
 import Button from '../button/button.component'
 
 const formfields ={
-    displayname:'',
+    displayName:'',
     email: '',
     password: '',
     confirm:''
